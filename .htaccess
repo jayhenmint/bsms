@@ -1,0 +1,8 @@
+RewriteEngine On
+# Keep local configuration and database dumps private.
+RewriteRule (^|/)\.env(?:\..*)?$ - [F,L,NC]
+RewriteRule ^env(?:/|$) - [F,L,NC]
+RewriteRule ^database(?:/|$) - [F,L,NC]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]
