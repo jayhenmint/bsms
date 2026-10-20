@@ -3,7 +3,7 @@
 ## Local setup
 
 1. Start Apache and MySQL in XAMPP. The existing local virtual host uses
-   `H:/forexmart_local_pc/htdocs/bsms_ci` and opens at <http://book.localhost/>.
+   `H:/x/htdocs/bsms_ci` and opens at <http://book.localhost/>.
 2. Copy `env/.env.local.example` to `env/.env.local` if `env/.env.local` does not already exist. Set the
    `DB_*` values for your MySQL account and generate `APP_ENCRYPTION_KEY` once:
 
